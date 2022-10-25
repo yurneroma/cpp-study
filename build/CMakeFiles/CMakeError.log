@@ -1,0 +1,173 @@
+Performing C++ SOURCE FILE Test HAVE_MM_PREFETCH failed with the following output:
+Change Dir: /Users/mabin/Documents/cpp-study/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_781a2/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_781a2.dir/build.make CMakeFiles/cmTC_781a2.dir/build
+Building CXX object CMakeFiles/cmTC_781a2.dir/src.cxx.o
+/usr/bin/clang++ -DHAVE_MM_PREFETCH  -Wall -Wextra -Werror -fno-exceptions -fno-rtti  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_781a2.dir/src.cxx.o -MF CMakeFiles/cmTC_781a2.dir/src.cxx.o.d -o CMakeFiles/cmTC_781a2.dir/src.cxx.o -c /Users/mabin/Documents/cpp-study/build/CMakeFiles/CMakeTmp/src.cxx
+In file included from /Users/mabin/Documents/cpp-study/build/CMakeFiles/CMakeTmp/src.cxx:5:
+/Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/xmmintrin.h:14:2: error: "This header is only meant to be used on x86 and x64 architecture"
+#error "This header is only meant to be used on x86 and x64 architecture"
+ ^
+In file included from /Users/mabin/Documents/cpp-study/build/CMakeFiles/CMakeTmp/src.cxx:5:
+In file included from /Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/xmmintrin.h:17:
+/Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/mmintrin.h:14:2: error: "This header is only meant to be used on x86 and x64 architecture"
+#error "This header is only meant to be used on x86 and x64 architecture"
+ ^
+/Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/mmintrin.h:37:5: error: use of undeclared identifier '__builtin_ia32_emms'; did you mean '__builtin_isless'?
+    __builtin_ia32_emms();
+    ^
+/Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/mmintrin.h:37:5: note: '__builtin_isless' declared here
+/Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/mmintrin.h:37:25: error: too few arguments to function call, expected 2, have 0
+    __builtin_ia32_emms();
+    ~~~~~~~~~~~~~~~~~~~~^
+/Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/mmintrin.h:54:19: error: use of undeclared identifier '__builtin_ia32_vec_init_v2si'
+    return (__m64)__builtin_ia32_vec_init_v2si(__i, 0);
+                  ^
+/Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/mmintrin.h:71:12: error: use of undeclared identifier '__builtin_ia32_vec_ext_v2si'
+    return __builtin_ia32_vec_ext_v2si((__v2si)__m, 0);
+           ^
+/Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/mmintrin.h:133:19: error: use of undeclared identifier '__builtin_ia32_packsswb'
+    return (__m64)__builtin_ia32_packsswb((__v4hi)__m1, (__v4hi)__m2);
+                  ^
+/Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/mmintrin.h:163:19: error: use of undeclared identifier '__builtin_ia32_packssdw'
+    return (__m64)__builtin_ia32_packssdw((__v2si)__m1, (__v2si)__m2);
+                  ^
+/Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/mmintrin.h:193:19: error: use of undeclared identifier '__builtin_ia32_packuswb'
+    return (__m64)__builtin_ia32_packuswb((__v4hi)__m1, (__v4hi)__m2);
+                  ^
+/Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/mmintrin.h:220:19: error: use of undeclared identifier '__builtin_ia32_punpckhbw'
+    return (__m64)__builtin_ia32_punpckhbw((__v8qi)__m1, (__v8qi)__m2);
+                  ^
+/Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/mmintrin.h:243:19: error: use of undeclared identifier '__builtin_ia32_punpckhwd'
+    return (__m64)__builtin_ia32_punpckhwd((__v4hi)__m1, (__v4hi)__m2);
+                  ^
+/Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/mmintrin.h:264:19: error: use of undeclared identifier '__builtin_ia32_punpckhdq'
+    return (__m64)__builtin_ia32_punpckhdq((__v2si)__m1, (__v2si)__m2);
+                  ^
+/Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/mmintrin.h:291:19: error: use of undeclared identifier '__builtin_ia32_punpcklbw'
+    return (__m64)__builtin_ia32_punpcklbw((__v8qi)__m1, (__v8qi)__m2);
+                  ^
+/Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/mmintrin.h:314:19: error: use of undeclared identifier '__builtin_ia32_punpcklwd'
+    return (__m64)__builtin_ia32_punpcklwd((__v4hi)__m1, (__v4hi)__m2);
+                  ^
+/Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/mmintrin.h:335:19: error: use of undeclared identifier '__builtin_ia32_punpckldq'
+    return (__m64)__builtin_ia32_punpckldq((__v2si)__m1, (__v2si)__m2);
+                  ^
+/Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/mmintrin.h:356:19: error: use of undeclared identifier '__builtin_ia32_paddb'; did you mean '__builtin_arm_addg'?
+    return (__m64)__builtin_ia32_paddb((__v8qi)__m1, (__v8qi)__m2);
+                  ^
+/Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/mmintrin.h:356:19: note: '__builtin_arm_addg' declared here
+/Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/mmintrin.h:356:19: error: first argument of MTE builtin function must be a pointer ('__v8qi' (vector of 8 'char' values) invalid)
+    return (__m64)__builtin_ia32_paddb((__v8qi)__m1, (__v8qi)__m2);
+                  ^                    ~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/mmintrin.h:377:19: error: use of undeclared identifier '__builtin_ia32_paddw'; did you mean '__builtin_arm_addg'?
+    return (__m64)__builtin_ia32_paddw((__v4hi)__m1, (__v4hi)__m2);
+                  ^
+/Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/mmintrin.h:356:19: note: '__builtin_arm_addg' declared here
+    return (__m64)__builtin_ia32_paddb((__v8qi)__m1, (__v8qi)__m2);
+                  ^
+/Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/mmintrin.h:377:19: error: first argument of MTE builtin function must be a pointer ('__v4hi' (vector of 4 'short' values) invalid)
+    return (__m64)__builtin_ia32_paddw((__v4hi)__m1, (__v4hi)__m2);
+                  ^                    ~~~~~~~~~~~~
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make[1]: *** [CMakeFiles/cmTC_781a2.dir/src.cxx.o] Error 1
+make: *** [cmTC_781a2/fast] Error 2
+
+
+Source file was:
+
+#if defined(_MSC_VER)
+#include <intrin.h>
+#else  // !defined(_MSC_VER)
+#include <xmmintrin.h>
+#endif  // defined(_MSC_VER)
+
+int main() {
+  char data = 0;
+  const char* address = &data;
+  _mm_prefetch(address, _MM_HINT_NTA);
+  return 0;
+}
+
+Performing C++ SOURCE FILE Test HAVE_SSE42 failed with the following output:
+Change Dir: /Users/mabin/Documents/cpp-study/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_aca6e/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_aca6e.dir/build.make CMakeFiles/cmTC_aca6e.dir/build
+Building CXX object CMakeFiles/cmTC_aca6e.dir/src.cxx.o
+/usr/bin/clang++ -DHAVE_SSE42  -Wall -Wextra -Werror -fno-exceptions -fno-rtti  -msse4.2 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_aca6e.dir/src.cxx.o -MF CMakeFiles/cmTC_aca6e.dir/src.cxx.o.d -o CMakeFiles/cmTC_aca6e.dir/src.cxx.o -c /Users/mabin/Documents/cpp-study/build/CMakeFiles/CMakeTmp/src.cxx
+clang: error: argument unused during compilation: '-msse4.2' [-Werror,-Wunused-command-line-argument]
+make[1]: *** [CMakeFiles/cmTC_aca6e.dir/src.cxx.o] Error 1
+make: *** [cmTC_aca6e/fast] Error 2
+
+
+Source file was:
+
+#if defined(_MSC_VER)
+#include <intrin.h>
+#else  // !defined(_MSC_VER)
+#include <cpuid.h>
+#include <nmmintrin.h>
+#endif  // defined(_MSC_VER)
+
+int main() {
+  _mm_crc32_u8(0, 0); _mm_crc32_u32(0, 0);
+#if defined(_M_X64) || defined(__x86_64__)
+   _mm_crc32_u64(0, 0);
+#endif // defined(_M_X64) || defined(__x86_64__)
+  return 0;
+}
+
+Performing C++ SOURCE FILE Test HAVE_STRONG_GETAUXVAL failed with the following output:
+Change Dir: /Users/mabin/Documents/cpp-study/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_d51bb/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_d51bb.dir/build.make CMakeFiles/cmTC_d51bb.dir/build
+Building CXX object CMakeFiles/cmTC_d51bb.dir/src.cxx.o
+/usr/bin/clang++ -DHAVE_STRONG_GETAUXVAL  -Wall -Wextra -Werror -fno-exceptions -fno-rtti  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_d51bb.dir/src.cxx.o -MF CMakeFiles/cmTC_d51bb.dir/src.cxx.o.d -o CMakeFiles/cmTC_d51bb.dir/src.cxx.o -c /Users/mabin/Documents/cpp-study/build/CMakeFiles/CMakeTmp/src.cxx
+/Users/mabin/Documents/cpp-study/build/CMakeFiles/CMakeTmp/src.cxx:4:10: fatal error: 'sys/auxv.h' file not found
+#include <sys/auxv.h>
+         ^~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_d51bb.dir/src.cxx.o] Error 1
+make: *** [cmTC_d51bb/fast] Error 2
+
+
+Source file was:
+
+#include <arm_acle.h>
+#include <arm_neon.h>
+#include <sys/auxv.h>
+
+int main() {
+  getauxval(AT_HWCAP);
+  return 0;
+}
+
+Performing C++ SOURCE FILE Test HAVE_WEAK_GETAUXVAL failed with the following output:
+Change Dir: /Users/mabin/Documents/cpp-study/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_cab9d/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_cab9d.dir/build.make CMakeFiles/cmTC_cab9d.dir/build
+Building CXX object CMakeFiles/cmTC_cab9d.dir/src.cxx.o
+/usr/bin/clang++ -DHAVE_WEAK_GETAUXVAL  -Wall -Wextra -Werror -fno-exceptions -fno-rtti  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_cab9d.dir/src.cxx.o -MF CMakeFiles/cmTC_cab9d.dir/src.cxx.o.d -o CMakeFiles/cmTC_cab9d.dir/src.cxx.o -c /Users/mabin/Documents/cpp-study/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_cab9d
+/opt/homebrew/Cellar/cmake/3.22.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cab9d.dir/link.txt --verbose=1
+/usr/bin/clang++  -Wall -Wextra -Werror -fno-exceptions -fno-rtti  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_cab9d.dir/src.cxx.o -o cmTC_cab9d 
+Undefined symbols for architecture arm64:
+  "getauxval(unsigned long)", referenced from:
+      _main in src.cxx.o
+ld: symbol(s) not found for architecture arm64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_cab9d] Error 1
+make: *** [cmTC_cab9d/fast] Error 2
+
+
+Source file was:
+
+unsigned long getauxval(unsigned long type) __attribute__((weak));
+#define AT_HWCAP 16
+
+int main() {
+  getauxval(AT_HWCAP);
+  return 0;
+}
+
